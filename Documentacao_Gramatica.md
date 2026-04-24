@@ -91,55 +91,38 @@ Abaixo está a estrutura gerada pelo compilador ao ler o arquivo `teste2.txt`:
   [lista_comandos]
     [comando]
       [corpo]
-        [comando]
-          [corpo]
-            [Numero] : 10
-            [pos_num]
-              [Numero] : 5
-              [operador]
-                [Sinal] : >
-        [pos_cmd]
-          [bloco_comandos]
-            [lista_comandos]
-              [comando]
-                [corpo]
-                  [Numero] : 2
-                  [pos_num]
-                    [Numero] : 3
-                    [operador]
-                      [Sinal] : *
-              [lista_cauda]
-                [comando]
-                  [corpo]
-                    [Numero] : 4
-                    [pos_num]
-                      [Numero] : 2
-                      [operador]
-                        [Sinal] : +
-                [lista_cauda] : Epsilon
-          [controle]
-            [Condicional] : IF
+        [Numero] : 100
+        [pos_num]
+          [Palavra] : VAR
+          [pos_mem]
+            [ComandoEspecial] : MEM
     [lista_cauda]
       [comando]
         [corpo]
           [comando]
             [corpo]
-              [Numero] : 5
-              [pos_num]
-                [Numero] : 5
+              [Palavra] : VAR
+              [pos_pal]
+                [Numero] : 50
                 [operador]
-                  [Sinal] : ==
+                  [Sinal] : >
           [pos_cmd]
             [bloco_comandos]
               [lista_comandos]
                 [comando]
                   [corpo]
-                    [Numero] : 10
+                    [Numero] : 5.5
                     [pos_num]
-                      [Numero] : 2
+                      [Numero] : 2.0
                       [operador]
-                        [Sinal] : /
-                [lista_cauda] : Epsilon
+                        [Sinal] : *
+                [lista_cauda]
+                  [comando]
+                    [corpo]
+                      [Numero] : 1
+                      [pos_num]
+                        [ComandoEspecial] : RES
+                  [lista_cauda] : Epsilon
             [controle]
               [Condicional] : IF
       [lista_cauda]
@@ -147,9 +130,9 @@ Abaixo está a estrutura gerada pelo compilador ao ler o arquivo `teste2.txt`:
           [corpo]
             [comando]
               [corpo]
-                [Numero] : 1
+                [Numero] : 2
                 [pos_num]
-                  [Numero] : 10
+                  [Numero] : 5
                   [operador]
                     [Sinal] : <
             [pos_cmd]
@@ -157,20 +140,64 @@ Abaixo está a estrutura gerada pelo compilador ao ler o arquivo `teste2.txt`:
                 [lista_comandos]
                   [comando]
                     [corpo]
-                      [Numero] : 1
+                      [Numero] : 10
                       [pos_num]
-                        [Numero] : 1
+                        [Numero] : 3
                         [operador]
-                          [Sinal] : +
+                          [Sinal] : %
                   [lista_cauda] : Epsilon
               [controle]
                 [Laco] : WHILE
         [lista_cauda]
           [comando]
             [corpo]
-              [Numero] : 100
+              [Numero] : 20
               [pos_num]
-                [Numero] : 10
+                [Numero] : 4
                 [operador]
                   [Sinal] : /
-          [lista_cauda] : Epsilon
+          [lista_cauda]
+            [comando]
+              [corpo]
+                [Numero] : 2
+                [pos_num]
+                  [Numero] : 3
+                  [operador]
+                    [Sinal] : ^
+            [lista_cauda]
+              [comando]
+                [corpo]
+                  [Numero] : 8
+                  [pos_num]
+                    [Numero] : 2
+                    [operador]
+                      [Sinal] : |
+              [lista_cauda]
+                [comando]
+                  [corpo]
+                    [Numero] : 10
+                    [pos_num]
+                      [Numero] : 5
+                      [operador]
+                        [Sinal] : -
+                [lista_cauda]
+                  [comando]
+                    [corpo]
+                      [Numero] : 7
+                      [pos_num]
+                        [Numero] : 7
+                        [operador]
+                          [Sinal] : +
+                  [lista_cauda]
+                    [comando]
+                      [corpo]
+                        [Numero] : 2
+                        [pos_num]
+                          [ComandoEspecial] : RES
+                    [lista_cauda]
+                      [comando]
+                        [corpo]
+                          [Palavra] : VAR
+                          [pos_pal] : Epsilon
+                      [lista_cauda] : Epsilon
+
