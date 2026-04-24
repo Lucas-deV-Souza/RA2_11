@@ -1,0 +1,82 @@
+[programa]
+  [lista_comandos]
+    [comando]
+      [corpo]
+        [Numero] : 4.5
+        [pos_num]
+          [Numero] : 2.0
+          [operador]
+            [Sinal] : +
+    [lista_cauda]
+      [comando]
+        [corpo]
+          [Numero] : 10
+          [pos_num]
+            [Numero] : 3
+            [operador]
+              [Sinal] : *
+      [lista_cauda]
+        [comando]
+          [corpo]
+            [Numero] : 15.5
+            [pos_num]
+              [Numero] : 5.0
+              [operador]
+                [Sinal] : -
+        [lista_cauda]
+          [comando]
+            [corpo]
+              [Numero] : 20
+              [pos_num]
+                [Numero] : 4
+                [operador]
+                  [Sinal] : /
+          [lista_cauda]
+            [comando]
+              [corpo]
+                [Numero] : 2
+                [pos_num]
+                  [Numero] : 3
+                  [operador]
+                    [Sinal] : ^
+            [lista_cauda]
+              [comando]
+                [corpo]
+                  [Numero] : 10
+                  [pos_num]
+                    [Numero] : 2
+                    [operador]
+                      [Sinal] : %
+              [lista_cauda]
+                [comando]
+                  [corpo]
+                    [Numero] : 8
+                    [pos_num]
+                      [Numero] : 2
+                      [operador]
+                        [Sinal] : |
+                [lista_cauda]
+                  [comando]
+                    [corpo]
+                      [Numero] : 3.14
+                      [pos_num]
+                        [Numero] : 2.0
+                        [operador]
+                          [Sinal] : *
+                  [lista_cauda]
+                    [comando]
+                      [corpo]
+                        [Numero] : 100
+                        [pos_num]
+                          [Numero] : 10
+                          [operador]
+                            [Sinal] : /
+                    [lista_cauda]
+                      [comando]
+                        [corpo]
+                          [Numero] : 7
+                          [pos_num]
+                            [Numero] : 7
+                            [operador]
+                              [Sinal] : +
+                      [lista_cauda] : Epsilon
