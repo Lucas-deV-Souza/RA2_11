@@ -1,6 +1,6 @@
 # Integrantes do grupo (ordem alfabética):
-# Lucas de Souza Vieira = Lucas-deV-Souza
-# Nome do grupo no Canvas: [RA2 11]
+# Lucas de Souza Vieira - Lucas-deV-Souza
+# Nome do grupo no Canvas: RA2 11
 
 import sys
 
@@ -668,10 +668,16 @@ class GeradorAssembly:
             self.codigo.append(f"    VPUSH {{D7}}")
             
 
+       
         elif nome == "Palavra":
+            linha_var = f"{valor}: .double 0.0"
+            if linha_var not in self.data:
+                self.data.append(linha_var)
+                
             self.codigo.append(f"    @ Carregando variavel {valor}")
             self.codigo.append(f"    LDR R0, ={valor}")
-            self.codigo.append(f"    VPUSH {{R0}}")
+            self.codigo.append(f"    VLDR D7, [R0]")
+            self.codigo.append(f"    VPUSH {{D7}}")
 
 
         elif nome == "Sinal":
