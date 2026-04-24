@@ -1,0 +1,87 @@
+[programa]
+  [lista_comandos]
+    [comando]
+      [corpo]
+        [comando]
+          [corpo]
+            [Numero] : 10
+            [pos_num]
+              [Numero] : 5
+              [operador]
+                [Sinal] : >
+        [pos_cmd]
+          [bloco_comandos]
+            [lista_comandos]
+              [comando]
+                [corpo]
+                  [Numero] : 2
+                  [pos_num]
+                    [Numero] : 3
+                    [operador]
+                      [Sinal] : *
+              [lista_cauda]
+                [comando]
+                  [corpo]
+                    [Numero] : 4
+                    [pos_num]
+                      [Numero] : 2
+                      [operador]
+                        [Sinal] : +
+                [lista_cauda] : Epsilon
+          [controle]
+            [Condicional] : IF
+    [lista_cauda]
+      [comando]
+        [corpo]
+          [comando]
+            [corpo]
+              [Numero] : 5
+              [pos_num]
+                [Numero] : 5
+                [operador]
+                  [Sinal] : ==
+          [pos_cmd]
+            [bloco_comandos]
+              [lista_comandos]
+                [comando]
+                  [corpo]
+                    [Numero] : 10
+                    [pos_num]
+                      [Numero] : 2
+                      [operador]
+                        [Sinal] : /
+                [lista_cauda] : Epsilon
+            [controle]
+              [Condicional] : IF
+      [lista_cauda]
+        [comando]
+          [corpo]
+            [comando]
+              [corpo]
+                [Numero] : 1
+                [pos_num]
+                  [Numero] : 10
+                  [operador]
+                    [Sinal] : <
+            [pos_cmd]
+              [bloco_comandos]
+                [lista_comandos]
+                  [comando]
+                    [corpo]
+                      [Numero] : 1
+                      [pos_num]
+                        [Numero] : 1
+                        [operador]
+                          [Sinal] : +
+                  [lista_cauda] : Epsilon
+              [controle]
+                [Laco] : WHILE
+        [lista_cauda]
+          [comando]
+            [corpo]
+              [Numero] : 100
+              [pos_num]
+                [Numero] : 10
+                [operador]
+                  [Sinal] : /
+          [lista_cauda] : Epsilon
